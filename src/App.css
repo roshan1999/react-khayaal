@@ -1,0 +1,26 @@
+.main-app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.main-app > .main-section {
+  scroll-snap-align: start;
+  padding: 40px 0 110px 0;
+}
+
+.main-app > .main-section-two {
+  scroll-snap-align: start;
+  padding: 150px 0;
+}
+
+.main-app > .main-section-three {
+  scroll-snap-align: start;
+  padding: 90px 0;
+}
+
+.main-app > .main-section-four {
+  scroll-snap-align: start;
+  padding: 110px 0 150px 0;
+}
