@@ -1,0 +1,61 @@
+.main-section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex: 1 100%;
+}
+
+.left-section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section {
+  flex: 1;
+  margin-left: auto;
+  margin-right: 4vw;
+  z-index: -1;
+}
+
+#short-slogan {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2vw;
+  color: var(--primary-dark);
+}
+
+#about-img {
+  margin-top: 1.25vw;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4vw;
+  color: var(--secondary-text-color);
+}
+
+.slogan-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-items {
+  margin-top: 2.25vw;
+}
+
+.simple-button {
+  padding: 0;
+  margin-left: 4.5vw;
+  border: 0;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 2vw;
+  cursor: pointer;
+}
