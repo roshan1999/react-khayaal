@@ -3,7 +3,7 @@ import './FilledButton.css'
 export default function FilledButton(props) {
     return (
         <>
-            <button id="btn-filled">
+            <button className="btn-filled">
                 {props.children}
             </button>
         </>

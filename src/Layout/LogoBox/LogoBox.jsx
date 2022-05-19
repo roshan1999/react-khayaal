@@ -1,10 +1,11 @@
 import React from 'react';
-import './LogoBox.css'
+import KhayaalLogo from '../../assets/khayaal_logo.png';
+import './LogoBox.css';
 
 export default function LogoBox() {
     return (
-        <>
-            <div className='logoBox'></div>            
-        </>
+        <div className='logoBox'>
+            <img src={KhayaalLogo} width="100%"/>
+        </div>
     );
 };

@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css'
-import FilledButton from '../../Components/FilledButton/FilledButton';
 
 export default function Navbar() {
+    const [isActive, setIsActive] = useState(false);
+    const toggleIsActive = (e) => {
+        e.preventDefault();
+        setIsActive(!isActive);
+    }
+
     return (
         <div className='nav'>
             <ul>
@@ -12,8 +17,13 @@ export default function Navbar() {
                 <li><a href="#">Activities</a></li>
                 <li><a href="#">Members</a></li>
                 <li><a href="#">Join Us</a></li>
-                <FilledButton>Donate Now</FilledButton>
-            </ul>
-        </div>
+            </ul >
+            <div className='action-items'>
+                <button className="btn-filled">Donate Now</button>
+                <div className={!isActive ? "hamburger" : "hamburger is-active"} onClick={toggleIsActive}>
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div >
     );
 }
