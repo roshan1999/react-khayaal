@@ -1,29 +1,13 @@
-.main-app {
+.app-container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
-/* .main-app > .nav {
-  display: none;
-} */
-
-.main-app > .main-section {
+.app-container > .home-container {
   scroll-snap-align: start;
 }
 
-.main-app > .main-section-two {
-  scroll-snap-align: start;
-}
-
-.main-app > .main-section-three {
-  scroll-snap-align: start;
-}
-
-.main-app > .main-section-four {
-  scroll-snap-align: start;
-  background-color: pink;
-}
-
-.main-app > .carousel {
+.footer-container {
   scroll-snap-align: start;
 }

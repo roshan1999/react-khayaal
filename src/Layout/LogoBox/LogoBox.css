@@ -1,23 +1,23 @@
 .logoBox {
   position: fixed;
-  width: 13vw;
-  height: 13vw;
+  width: 13rem;
+  height: 13rem;
   left: 1vw;
   z-index: 999;
 }
 
-@media (max-width: 1108px) {
+@media (max-width: 674px) {
   .logoBox {
     width: 10rem;
     height: 10rem;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 475px) {
   .logoBox {
-    top: 1rem;
-    left: 1rem;
-    width: 6rem;
-    height: 6rem;
+    top: 0rem;
+    left: 0rem;
+    width: 8rem;
+    height: 8rem;
   }
 }
