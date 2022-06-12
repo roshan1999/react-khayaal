@@ -2,22 +2,23 @@
   position: fixed;
   width: 13rem;
   height: 13rem;
-  left: 1vw;
+  top: 1vw;
+  left: 2vw;
   z-index: 999;
 }
 
 @media (max-width: 674px) {
   .logoBox {
-    width: 10rem;
-    height: 10rem;
+    top: 5.5vw;
+    left: 5vw;
+  }
+  .logoBox img {
+    width: 50%;
   }
 }
 
 @media (max-width: 475px) {
-  .logoBox {
-    top: 0rem;
-    left: 0rem;
-    width: 8rem;
-    height: 8rem;
+  .logoBox img {
+    width: 40%;
   }
 }
