@@ -18,4 +18,7 @@
   --tertiary-text-color: #f3f4ed;
   --info-text-color: #4b645e;
   --light-text-color: #b8c5b0;
+  --primary-border-color: #2e244b;
+  --secondary-border-color: #885F87;
+  --primary-dim-color: rgba(0,0,0,0.25);
 }

@@ -1,0 +1,27 @@
+.team-parent-container {
+  display: flex;
+  height: 100vh;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-parent-header-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.team-parent-header-container > h1 {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 673px) {
+  .team-parent-header-container > h1 {
+      font-size: 6.5vw;
+  }
+}
