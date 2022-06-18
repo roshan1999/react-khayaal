@@ -1,4 +1,4 @@
-import LastImg from '../../../../assets/LandingLast/landing-last-image.png';
+import LastImg from '../../../../assets/LandingLast/khayaal-landing-last.png';
 import './LandingLast.css';
 
 const LandingLast = () => {

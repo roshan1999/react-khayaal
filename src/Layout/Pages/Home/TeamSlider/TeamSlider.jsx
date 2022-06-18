@@ -38,11 +38,11 @@ const TeamSlider = (props) => {
         <div className="team-slider-parent-container"
             onMouseEnter={() => setIconVisible(true)}
             onMouseLeave={() => setIconVisible(false)}        >
-            {iconVisible && <img
+            {/* {iconVisible && <img
                 className="icon"
                 src={BackwardIcon}
                 alt="backward_icon"
-                onClick={() => handleSwipe("Right")} />}
+                onClick={() => handleSwipe("Right")} />} */}
             <div
                 {...swipeHandlers}
                 className="team-slider-container">
@@ -54,8 +54,8 @@ const TeamSlider = (props) => {
                             animate={{
                                 rotate: 0,
                                 top: index !== (position + 1) ? 
-                                (!isMobileScreen ? '3vw':'7vw')
-                                 : (!isMobileScreen ? '1vw':'0vw'),
+                                (!isMobileScreen ? '2vw':'7vw')
+                                 : (!isMobileScreen ? '-1vw':'0vw'),
                                 left: isMobileScreen ?
                                     `${(index - position) * 45 - 70}vw` :
                                     (index !== (position + 1) ? `${(index - position) * 23 - 34}vw` :
@@ -100,11 +100,11 @@ const TeamSlider = (props) => {
                     ))}
                 </motion.div>
             </div>
-            {iconVisible && <img
+            {/* {iconVisible && <img
                 className="icon"
                 src={ForwardIcon}
                 alt="forward_icon"
-                onClick={() => handleSwipe("Left")} />}
+                onClick={() => handleSwipe("Left")} />} */}
         </div>
     );
 };

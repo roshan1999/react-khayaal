@@ -36,8 +36,8 @@
 
 @media screen and (min-width: 674px) {
   .landing-intro-container {
+    padding-top: 10vw;
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -85,7 +85,6 @@
 }
 
 @media (max-width: 1024px) {
-
   .landing-intro-left-container .slogan-desc {
     width: 65%;
   }
@@ -110,7 +109,7 @@
     flex: 1.3;
   }
   .landing-intro-right-container .right-img {
-    height: 45vw
+    height: 45vw;
   }
 }
 
@@ -120,21 +119,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 80vh; */
     /* text-align: center; */
   }
 
   .landing-intro-left-container {
-    flex: 1;
+    padding-top: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
-
   }
 
   #short-slogan {
-    flex: 1.1;
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;
@@ -146,7 +143,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height:20%;
     width: 100%;
     text-align: center;
   }
@@ -157,7 +153,6 @@
   }
 
   .landing-intro-right-container {
-    flex: 4;
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -166,13 +161,12 @@
   }
 
   .landing-intro-right-container .right-img {
-    padding: 7vw 0;
-    width: 80vw;
-    height: 80vw;
+    width: 70vw;
+    height: 70vw;
+    padding: 5vw 0;
   }
 
   .landing-intro-right-container .slogan-desc {
-    height: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;

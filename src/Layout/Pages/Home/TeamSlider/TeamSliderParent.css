@@ -1,16 +1,17 @@
 .team-parent-container {
   display: flex;
-  height: 100vh;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
+  height: 35rem;
+  padding-top: 10vw;
 }
 
 .team-parent-header-container {
-  flex: 0.7;
+  flex: 0.2;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .team-parent-header-container > h1 {
@@ -22,6 +23,14 @@
 
 @media (max-width: 673px) {
   .team-parent-header-container > h1 {
-      font-size: 6.5vw;
+    font-size: 6.5vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .team-parent-container {
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vw;
   }
 }

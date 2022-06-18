@@ -1,10 +1,10 @@
-import images from '../images.js';
+import {memberImages, getLandingAboutImages} from '../images.js';
 
 export function getMembers() {
     let members = [];
     let name = ["Roshan","Rohan","Pariakhar","Jacob","Manoj"];
     let position = ["President - IT", "Founder", "Co-founder", "CTO", "Developer"]
-    images.map((image, index) => {
+    memberImages.map((image, index) => {
         members.push({
             image: image,
             name: name[index], 
