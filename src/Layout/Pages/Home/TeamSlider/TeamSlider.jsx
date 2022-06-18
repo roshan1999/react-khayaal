@@ -10,7 +10,7 @@ const TeamSlider = (props) => {
 
     function handleSwipe(dir) {
         if (dir === 'Left') {
-            if (position < props.slides.length - 3) {
+            if (position < props.slides.length - 2) {
                 positionSet(position + 1);
             }
             else {
@@ -18,8 +18,11 @@ const TeamSlider = (props) => {
             }
         }
         else if (dir === 'Right') {
-            if (position > 0) {
+            if (position > -1) {
                 positionSet(position - 1);
+            }
+            else {
+                positionSet(0);
             }
         }
     }

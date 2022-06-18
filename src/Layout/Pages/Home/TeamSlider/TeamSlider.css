@@ -1,7 +1,7 @@
 .team-slider-parent-container {
     display: flex;
     flex-flow: row;
-    flex: 5;
+    flex: 1;
   }
 
 .team-slider-container {

@@ -10,7 +10,7 @@ const LandingLast = () => {
             <div className="right-container">
                 <div className="action-items">
                     <button>Join Us</button>
-                    <button>Donate Now</button>
+                    <button id="last-donate">Donate Now</button>
                 </div>
             </div>
         </div>)

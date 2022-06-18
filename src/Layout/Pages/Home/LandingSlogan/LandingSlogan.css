@@ -1,7 +1,7 @@
 .simple-button {
   padding: 0;
   border: 0;
-  margin-left: 4rem;
+  margin-left: 3rem;
   background-color: var(--background-color);
   color: var(--secondary-text-color);
   font-family: Roboto;
@@ -16,16 +16,17 @@
 }
 
 #short-slogan {
-  flex: 1.1;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
   color: var(--primary-dark);
+  margin-bottom: 3vw;
 }
 
 .about-img {
   flex: 1;
+  margin-top: 1vw;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -53,13 +54,17 @@
   .landing-intro-left-container .slogan-desc {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
-    height: 25vh;
+    height: 100%;
+    width: 55%;
   }
 
   .landing-intro-left-container .action-items {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .landing-intro-right-container {
@@ -67,11 +72,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
   }
 
   .landing-intro-right-container .right-img {
-    height: 80vh;
+    height: 38vw;
   }
 
   .landing-intro-right-container .slogan-desc {
@@ -80,8 +85,9 @@
 }
 
 @media (max-width: 1024px) {
+
   .landing-intro-left-container .slogan-desc {
-    height: 20vh;
+    width: 65%;
   }
 
   #short-slogan {
@@ -104,7 +110,7 @@
     flex: 1.3;
   }
   .landing-intro-right-container .right-img {
-    width: 100%;
+    height: 45vw
   }
 }
 
@@ -115,6 +121,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* text-align: center; */
   }
 
   .landing-intro-left-container {
@@ -123,6 +130,7 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
+
   }
 
   #short-slogan {
@@ -130,7 +138,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;
-    font-size: 6.5vw;
+    font-size: 5.5vw;
     color: var(--primary-dark);
   }
 
@@ -138,7 +146,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 4vh;
+    height:20%;
+    width: 100%;
+    text-align: center;
   }
 
   .landing-intro-left-container .slogan-desc .action-items,
@@ -156,7 +166,9 @@
   }
 
   .landing-intro-right-container .right-img {
-    width: 90vw;
+    padding: 7vw 0;
+    width: 80vw;
+    height: 80vw;
   }
 
   .landing-intro-right-container .slogan-desc {
@@ -172,5 +184,16 @@
 
   .landing-intro-right-container .about-img {
     flex: 1;
+  }
+}
+
+@media (max-width: 375px) {
+  .action-items .btn-filled {
+    padding: 0.4rem 0.8rem;
+    font-size: 5vw;
+  }
+
+  .landing-intro-right-container button {
+    font-size: 6vw;
   }
 }

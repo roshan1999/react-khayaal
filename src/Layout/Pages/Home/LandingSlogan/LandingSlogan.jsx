@@ -1,4 +1,4 @@
-import { ReactComponent as SloganImg } from '../../../../assets/sloganimg.svg';
+import SloganImg from '../../../../assets/Homepage/LandingImg.png';
 import FilledButton from '../../../../Components/FilledButton/FilledButton';
 import './LandingSlogan.css';
 
@@ -7,8 +7,8 @@ export default function LandingSlogan() {
         <div className="landing-intro-container">
             <div className="landing-intro-left-container">
                 <div className="slogan-desc">
-                    <span id="short-slogan">Short Slogan</span>
-                    <span className="about-img">About the picture</span>
+                    <span id="short-slogan">Education is the movement from Darkness to Light</span>
+                    {/* <span className="about-img">About the picture</span> */}
                     <div className="action-items">
                         <FilledButton>Donate Now</FilledButton>
                         <button className='simple-button'>Join us</button>
@@ -16,9 +16,8 @@ export default function LandingSlogan() {
                 </div>
             </div>
             <div className="landing-intro-right-container">
-                <SloganImg className="right-img" />
+                <img src={SloganImg} className="right-img" />
                 <div className="slogan-desc">
-                    <span className="about-img">About the picture</span>
                     <div className="action-items">
                         <FilledButton>Donate Now</FilledButton>
                         <button className='simple-button'>Join us</button>
