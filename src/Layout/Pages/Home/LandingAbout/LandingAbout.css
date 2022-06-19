@@ -154,6 +154,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20vw;
   }
 
   .landing-about-left-container {
@@ -181,7 +182,7 @@
   }
 
   .landing-about-left-container .image-container {
-    width: 75vw;
+    width: 100vw;
   }
 
 }

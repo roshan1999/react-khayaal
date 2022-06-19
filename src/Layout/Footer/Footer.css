@@ -81,7 +81,11 @@ span:last-child {
     flex: 2;
   }
 
-  .footer-contact-container span:nth-child(2), span:last-child {
+  .footer-contact-container span:nth-child(2) {
+    flex: 1;
+  }
+
+  .footer-contact-container span:last-child {
     flex: 1;
   }
 

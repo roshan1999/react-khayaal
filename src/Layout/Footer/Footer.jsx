@@ -14,7 +14,7 @@ function Footer() {
             <div className="footer-container">
                 <div className="footer-contact-container">
                     <span>Contact Us</span>
-                    <span>Number</span>
+                    <span>9876543210</span>
                     <span>email@gmail.com</span>
                 </div>
                 <div className="footer-logo-container">
