@@ -43,6 +43,7 @@
   padding: 1vw 3.5vw;
   border-radius: 888rem;
   margin: 0.5rem 0;
+  cursor: pointer;
 }
 
 #last-donate {

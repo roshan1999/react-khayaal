@@ -182,6 +182,10 @@
 }
 
 @media (max-width: 375px) {
+  .landing-intro-container {
+    padding-top: 1rem;
+  }
+
   .action-items .btn-filled {
     padding: 2vw 4vw;
     font-size: 5vw;

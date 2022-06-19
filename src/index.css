@@ -2,6 +2,7 @@ html {
   font-size: 16px;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -34,4 +35,8 @@ body::-webkit-scrollbar-thumb {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
