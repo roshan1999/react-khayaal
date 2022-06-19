@@ -16,7 +16,7 @@ export default function LandingSlogan() {
                 </div>
             </div>
             <div className="landing-intro-right-container">
-                <img src={SloganImg} className="right-img" />
+                <img src={SloganImg} className="right-img" alt="right-img" />
                 <div className="slogan-desc">
                     <div className="action-items">
                         <FilledButton>Donate Now</FilledButton>

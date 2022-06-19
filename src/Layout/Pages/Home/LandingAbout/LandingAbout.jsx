@@ -1,5 +1,5 @@
 import './LandingAbout.css';
-import { memberImages, getLandingAboutImages } from '../../../../images.js';
+import { getLandingAboutImages } from '../../../../images.js';
 
 export default function LandingAbout() {
     const aboutImages = getLandingAboutImages;
@@ -9,11 +9,11 @@ export default function LandingAbout() {
             <div className="landing-about-left-container">
                 <div className="image-container">
                     <div className="column-aligned-1">
-                        <img src={aboutImages[2]} />
+                        <img src={aboutImages[2]} alt="pic1"/>
                     </div>
                     <div className='column-aligned-2'>
-                        <img src={aboutImages[1]} />
-                        <img src={aboutImages[0]} />
+                        <img src={aboutImages[1]} alt="pic2"/>
+                        <img src={aboutImages[0]} alt="pic3"/>
                     </div>
                 </div>
             </div>

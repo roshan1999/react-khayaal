@@ -5,7 +5,7 @@ import './LogoBox.css';
 export default function LogoBox() {
     return (
         <div className='logoBox'>
-            <img src={KhayaalLogo} width="70%"/>
+            <img src={KhayaalLogo} width="70%" alt="logo"/>
         </div>
     );
 };

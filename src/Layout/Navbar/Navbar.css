@@ -25,7 +25,7 @@
   align-items: baseline;
 }
 
-.nav li a {
+.nav li button {
   font-family: "Roboto";
   text-align: center;
   font-size: 22px;
@@ -34,9 +34,11 @@
   padding: 2rem 1.5rem;
   text-decoration: none;
   transition: all 0.3s ease 0s;
+  background-color: transparent;
+  border: 0;
 }
 
-.nav li a:hover {
+.nav li button:hover {
   color: var(--secondary-text-color);
   cursor: pointer;
 }

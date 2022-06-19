@@ -13,12 +13,12 @@ export default function Navbar() {
     return (
         <div className='nav'>
             <ul>
-                <li><a onClick={()=>navigate("/")}>Home</a></li>
-                <li><a onClick={()=>navigate("/about")}>About Us</a></li>
-                <li><a href="#">Parent Organisation</a></li>
-                <li><a onClick={()=>navigate("/activities")}>Activities</a></li>
-                <li><a href="#">Members</a></li>
-                <li><a href="#">Join Us</a></li>
+                <li><button onClick={()=>navigate("/")}>Home</button></li>
+                <li><button onClick={()=>navigate("/about")}>About Us</button></li>
+                <li><button onClick={()=>navigate("/parent")}>Parent Organisation</button></li>
+                <li><button onClick={()=>navigate("/activities")}>Activities</button></li>
+                <li><button onClick={()=>navigate("/members")}>Members</button></li>
+                <li><button onClick={()=>navigate("/join")}>Join Us</button></li>
             </ul >
             <div className='action-items'>
                 <button className="btn-filled">Donate Now</button>
