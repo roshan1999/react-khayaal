@@ -16,13 +16,13 @@
 }
 
 #short-slogan {
-  font-family: Caveat, cursive;
+  font-family: Montagu Slab, serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
   color: var(--primary-dark);
   margin-bottom: 3vw;
-  letter-spacing: 10px;
+  /* letter-spacing: 10px; */
 }
 
 .about-img {
@@ -134,7 +134,7 @@
   }
 
   #short-slogan {
-    font-family: Roboto;
+    font-family: Montagu Slab;
     font-style: normal;
     font-weight: 700;
     font-size: 5.5vw;
