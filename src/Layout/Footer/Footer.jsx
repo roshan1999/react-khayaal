@@ -23,7 +23,8 @@ function Footer() {
                     })}
                 </div>
                 <div className="footer-newsletter-container">
-                    <p>Subscribe to our Newsletter for updates and upcoming events</p>
+                    <p>Subscribe to our Newsletter </p>
+                    <p>for updates and upcoming events</p>
                     <div className="footer-action-items">
                         <input type="email" name="email" id="email-newsletter" />
                         <button>Subscribe</button>

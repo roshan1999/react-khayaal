@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from "framer-motion";
 import './TeamSlider.css';
 import { useSwipeable } from "react-swipeable";
@@ -7,14 +7,13 @@ import ForwardIcon from '../../../../assets/icon_forward.svg';
 import BackwardIcon from '../../../../assets/icon_backward.svg';
 
 const TeamSlider = (props) => {
-
     function handleSwipe(dir) {
         if (dir === 'Left') {
             if (position < props.slides.length - 2) {
                 positionSet(position + 1);
             }
             else {
-                positionSet(0);
+                positionSet(-1);
             }
         }
         else if (dir === 'Right') {
@@ -29,20 +28,19 @@ const TeamSlider = (props) => {
 
     const isMobileScreen = useMediaQuery({ query: '(max-width: 768px)' })
     const [position, positionSet] = React.useState(0);
-    const [iconVisible, setIconVisible] = React.useState(false);
+    const [flag, setFlag] = React.useState(false);
     const swipeHandlers = useSwipeable({
         onSwipedLeft: () => handleSwipe('Left'),
         onSwipedRight: () => handleSwipe('Right')
     });
+
     return (
-        <div className="team-slider-parent-container"
-            onMouseEnter={() => setIconVisible(true)}
-            onMouseLeave={() => setIconVisible(false)}        >
-            {iconVisible && <img
+        <div className="team-slider-parent-container">
+            <img
                 className="icon"
                 src={BackwardIcon}
                 alt="backward_icon"
-                onClick={() => handleSwipe("Right")} />}
+                onClick={() => handleSwipe("Right")} />
             <div
                 {...swipeHandlers}
                 className="team-slider-container">
@@ -53,14 +51,14 @@ const TeamSlider = (props) => {
                             initial={{ scale: 0, rotation: -180 }}
                             animate={{
                                 rotate: 0,
-                                top: index !== (position + 1) ? 
-                                (!isMobileScreen ? '2vw':'7vw')
-                                 : (!isMobileScreen ? '-1vw':'0vw'),
+                                top: index !== (position + 1) ?
+                                    (!isMobileScreen ? '2vw' : '7vw')
+                                    : (!isMobileScreen ? '0vw' : '0vw'),
                                 left: isMobileScreen ?
                                     `${(index - position) * 45 - 70}vw` :
                                     (index !== (position + 1) ? `${(index - position) * 23 - 34}vw` :
-                                        `${(index - position) * 23 - 33.3}vw`),
-                                scale: index === (position + 1) ? 0.9 : 0.8
+                                        `${(index - position) * 23 - 34}vw`),
+                                scale: index === (position + 1) ? 1 : 0.8
                             }}
                             transition={{
                                 type: "spring",
@@ -76,10 +74,10 @@ const TeamSlider = (props) => {
                             <p
                                 style={index === (position + 1) ?
                                     (!isMobileScreen ?
-                                        { color: "var(--primary-text-color)", fontSize: "2vw", margin: 0 } :
+                                        { color: "var(--primary-text-color)", fontSize: "2vw", margin: '1rem' } :
                                         { color: "var(--primary-text-color)", fontSize: "3.5vw", margin: 0 }) :
                                     (!isMobileScreen ?
-                                        { color: "var(--primary-dim-color)", margin: 0, fontSize: "1.8vw" } :
+                                        { color: "var(--primary-dim-color)", margin: '1rem', fontSize: "1.8vw" } :
                                         { color: "var(--primary-dim-color)", margin: 0, fontSize: "3.5vw" })
                                 }>
                                 {member.name}
@@ -87,12 +85,12 @@ const TeamSlider = (props) => {
                             <p
                                 style={index !== (position + 1) ?
                                     (!isMobileScreen ?
-                                        { color: "var(--primary-dim-color)", fontSize: "1.3vw", margin: "0.6vw 0" } :
-                                        { color: "var(--primary-dim-color)", fontSize: "3vw", margin: "2vw 0" }
+                                        { color: "var(--primary-dim-color)", fontSize: "1.3vw", margin: "0.6vw 0", 'fontWeight': 'normal' } :
+                                        { color: "var(--primary-dim-color)", fontSize: "3vw", margin: "2vw 0", 'fontWeight': 'normal' }
                                     ) :
                                     (!isMobileScreen ?
-                                        { fontSize: "1.5vw", margin: "0.6vw 0" } :
-                                        { fontSize: "4.5vw", margin: "0.6vw 0" }
+                                        { fontSize: "1.5vw", margin: "0.6vw 0", 'fontWeight': 'normal' } :
+                                        { fontSize: "3vw", margin: "0.6vw 0", 'fontWeight': 'normal' }
                                     )}>
                                 {member.position}
                             </p>
@@ -100,11 +98,11 @@ const TeamSlider = (props) => {
                     ))}
                 </motion.div>
             </div>
-            {iconVisible && <img
+            <img
                 className="icon"
                 src={ForwardIcon}
                 alt="forward_icon"
-                onClick={() => handleSwipe("Left")} />}
+                onClick={() => handleSwipe("Left")} />
         </div>
     );
 };

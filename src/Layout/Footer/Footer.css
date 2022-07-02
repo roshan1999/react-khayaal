@@ -3,6 +3,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  padding-top: 5vw;
 }
 
 .footer-contact-container {
@@ -12,14 +13,14 @@
 
 .footer-contact-container span:first-child {
   font-family: Roboto;
-  font-weight: 900;
+  font-weight: bold;
   color: var(--primary-text-color);
 }
 
 .footer-contact-container span:nth-child(2),
 span:last-child {
   font-family: Roboto;
-  font-weight: 900;
+  font-weight: normal;
   color: var(--secondary-text-color);
 }
 
@@ -40,6 +41,26 @@ span:last-child {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  margin: 0;
+}
+
+.footer-newsletter-container input {
+  border-radius: 10px;
+  margin-right: 2rem;
+  border: 1px solid var(--primary-text-color);
+  padding: 0.2vw;
+  color: var(--primary-text-color);
+}
+
+.footer-newsletter-container button {
+  border-radius: 10px;
+  padding: 0.2vw 1vw;
+  background-color: var(--primary-dark);
+  color: var(--primary-light)
+}
+
+.footer-newsletter-container button:hover {
+  transform: scale(1);
 }
 
 .footer-action-items {
@@ -56,6 +77,15 @@ span:last-child {
 
 .footer-logo-container img:hover {
   transform: scale(1.2);
+}
+
+.footer-newsletter-container p {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-newsletter-container p:nth-child(2) {
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -77,24 +107,25 @@ span:last-child {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 3rem;
   }
   .footer-newsletter-container {
     flex: 0.5;
     flex-direction: column;
     color: var(--info-text-color);
-    margin-bottom: 2rem;
+    padding-bottom: 5rem;
   }
 
   .footer-contact-container span:first-child {
-    flex: 2;
+    flex: 1;
   }
 
   .footer-contact-container span:nth-child(2) {
-    flex: 1;
+    flex: 0.5;
   }
 
   .footer-contact-container span:last-child {
-    flex: 1;
+    flex: 1.5;
   }
 }
 

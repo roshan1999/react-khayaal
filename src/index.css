@@ -24,12 +24,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--secondary-text-color);
+  background: var(--primary-dark);
 }
 
 
 body::-webkit-scrollbar-thumb {
-  background: var(--primary-dark);
+  background: var(--secondary-text-color);
 }
 
 code {
